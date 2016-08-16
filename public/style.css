@@ -1,11 +1,5 @@
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 h1 {
-	font-size: 4rem;
+	font-size: 8rem;
 	text-align: center;
 	font-family: 'Bungee Inline', cursive;
 	text-transform: uppercase;
@@ -18,48 +12,9 @@ img {
 	width: 15rem;
 }
 
-.dumbclass {
-	/*making sure git works */
-}
-
-input[type=submit] {
-	
-	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -khtml-border-radius: 5px; 
-
-}
-
-input[type=text] {
-	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -khtml-border-radius: 5px; 
-
-}
-
-.center-me {
-	padding-right: 40px;
-	padding-left: 40px;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	transform: scale(1.2);
-}
 
 input {
   width : 15rem;
-}
-
-/*input[value="Pizza Time"] {*/
-/*	background-color: red;*/
-/*	color: white;*/
-/*}*/
-
-.col-1-3 {
-	width: 33.33%;
-	transition: transform 1s;
 }
 
 .tagline {
@@ -68,47 +23,6 @@ input {
 	padding-bottom: 2rem;
 	font-weight: bolder;
 	font-size: 1.2rem;
-}
-.grid:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-[class*='col-'] {
-	float: left;
-	padding-right: 40px;
-	padding-left: 40px;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-[class*='col-']:last-of-type {
-	padding-right: 0;
-}
-
-@media only screen and (max-width: 768px) {
-	/*for mobile */
-	[class*="col-"] {
-		width: 100%;
-	}
-
-	.grid:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-[class*='col-'] {
-	float: left;
-	padding-right: 20px;
-}
-
-[class*='col-']:last-of-type {
-	padding-right: 0;
-}
-
 }
 
  
