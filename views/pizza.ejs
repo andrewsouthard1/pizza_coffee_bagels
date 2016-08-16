@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<h1>Top 3 Results Near You!</h1>
+
+<% var sum = 0; %>
+<% data["businesses"].forEach(function(location){ %>
+    <div>
+        <%= location["name"] %><br>
+        <img src=<%= location["rating_img_url_small"] %>><br>
+        <img src=<%= location["image_url"] %>><br>
+    </div>
+    <% }); %>
+    
+<a href="/">Search again</a>
+
+<% include partials/footer %>

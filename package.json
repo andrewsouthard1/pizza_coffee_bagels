@@ -1,0 +1,18 @@
+{
+  "name": "pizzacoffeebagels",
+  "version": "1.0.0",
+  "description": "web app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Southard",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "request": "^2.74.0",
+    "yelp": "^1.0.1"
+  }
+}
