@@ -8,21 +8,20 @@ h1 {
 img {
 	max-width: auto;
 	max-height: auto;
-	height: 15rem;
-	width: 15rem;
+	height: 20rem;
+	width: 20rem;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
 }
 
-
-input {
-  width : 15rem;
-}
-
-.tagline {
+.pictures {
 	text-align: center;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	font-weight: bolder;
-	font-size: 1.2rem;
+	margin-top: 75px;
+}
+
+.centerme {
+	margin-left: 50%;
+	margin-right: 50%;
 }
 
  

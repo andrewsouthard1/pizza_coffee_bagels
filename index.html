@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <title>Pizza Coffee Bagels</title>
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Open+Sans" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="public/style.css" rel="stylesheet" type="text/css" >
 </head>
+
 <body>
 
 <h1>Pizza Coffee Bagels</h1>
 
-<div class="container">
+<div class="container pictures">
 	<div class="row">
-	<div class="col-lg-4" id="pizzaPic">
-		<img src="images/pizza.svg">
+	<div class="col-md-4 col-sm-4" id="pizzaPic">
+		<img src="public/images/pizza.svg">
 	</div>
-	<div class="col-lg-4" id="coffeePic">
-		<img src="images/coffee-cup.svg">
+	<div class="col-md-4 col-sm-4" id="coffeePic">
+		<img src="public/images/coffee-cup.svg">
 	</div>
-	<div class="col-lg-4" id="bagelPic">
-		<img src="images/jewish-bagels.svg">
+	<div class="col-md-4 col-sm-4" id="bagelPic">
+		<img src="public/images/jewish-bagels.svg">
 	</div>
 	</div>
-</div>		
+	
 
-<form action="/pizza" id = "pizzaForm" method="GET" class="center-me">
-	<input type="text" id="address" name="address"><br>
-	<input type="submit" class = "button" name="Pizza Time" value="Pizza Time">
-</form>
+	<div class="row">
+	<form action="/pizza" id = "pizzaForm" method="GET">
+		<input type="text" id="address" name="address"><br>
+		<input type="submit" name="Pizza Time" value="	Pizza Time">
+	</form>
+	</div>
 
-<form action="/coffee" id = "coffeeForm" method="GET" class="center-me">
-	<input type="text" id="address" name="address"><br>
-	<input type="submit" name="Coffee Time" value="Coffee Time">
-</form>
 
-<form action="/bagels" id = "bagelForm" method="GET" class="center-me">
-	<input type="text" id="address" name="address"><br>
-	<input type="submit" name="Bagel Time" value="Bagel Time">
-</form>
+	<div class="row form-group">
+	<form action="/coffee" id = "coffeeForm" method="GET">
+		<input type="text" id="address" name="address"><br>
+		<input type="submit" name="Coffee Time" value="Coffee Time">
+	</form>
+	</div>
 
-<script type="text/javascript" src="selector.js"></script>
+	<div class="row form-group">
+	<form action="/bagels" id = "bagelForm" method="GET">
+		<input type="text" id="address" name="address"><br>
+		<input type="submit" name="Bagel Time" value="Bagel Time">
+	</form>
+	</div>
+
+
+<script type="text/javascript" src="public/selector.js"></script>
 </body>
 </html>

@@ -8,8 +8,8 @@ $("#pizzaPic").on("click", function(){
 	$("#bagelPic").fadeOut(300);
 	$("#coffeePic").fadeOut(300);
 	$("#pizzaForm").fadeIn(1000);
-	$(this).removeClass('col-1-3');
-	$(this).addClass('center-me', {duration: 4000});
+	$(this).removeClass('col-md-4 col-sm-4').addClass('col-md-12 col-sm-12');
+	
 });
 
 
