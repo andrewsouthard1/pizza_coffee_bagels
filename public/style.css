@@ -19,9 +19,8 @@ img {
 	margin-top: 75px;
 }
 
-.centerme {
-	margin-left: 50%;
-	margin-right: 50%;
+.inlinePics {
+	display: inline-block;
 }
 
  

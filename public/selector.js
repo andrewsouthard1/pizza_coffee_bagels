@@ -5,26 +5,32 @@ $("#bagelForm").hide();
 
 
 $("#pizzaPic").on("click", function(){
-	$("#bagelPic").fadeOut(300);
-	$("#coffeePic").fadeOut(300);
+	$("#bagelPic").remove();
+	$("#coffeePic").remove();
 	$("#pizzaForm").fadeIn(1000);
-	$(this).removeClass('col-md-4 col-sm-4').addClass('col-md-12 col-sm-12');
+	$(this).removeClass('col-md-4 col-sm-4');
 	
 });
 
 
 $("#coffeePic").on("click", function(){
-	$("#pizzaPic").fadeOut(300);
-	$("#bagelPic").fadeOut(300);
-	$("#coffeeForm").fadeIn(300);
-	$(this).removeClass('col-1-3');
-	$(this).addClass('center-me');
+	$("#pizzaPic").remove();
+	$("#bagelPic").remove();
+	$("#coffeeForm").fadeIn(1000);
+	$(this).removeClass('col-md-4 col-sm-4');
+	// $(this).switchClass('col-md-4 col-sm-4 container row', 'text-center', 1000, 'easeInOutQuad')
 });
 
 $("#bagelPic").on("click", function(){
-	$("#pizzaPic").fadeOut(300);
-	$("#coffeePic").fadeOut(300);
-	$("#bagelForm").fadeIn(300);
-	$(this).removeClass('col-1-3');
-	$(this).addClass('center-me');
+	$("#pizzaPic").remove();
+	$("#coffeePic").remove();
+	$("#bagelForm").fadeIn(1000);
+	$(this).removeClass('col-md-4 col-sm-4');
+
 });
+
+$.fn.fadeAndRemove = function(speed) {
+	$(this).fadeOut(speed,function(){
+		$(this).remove();
+	})
+}
