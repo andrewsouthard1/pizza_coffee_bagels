@@ -25,9 +25,9 @@ app.get("/pizza", function(req, res){
     .then(function(data){
         res.render("pizza", {data: data});
     })
-    .catch(function (err){
-        console.error(err);
-    });
+    .catch(function (){
+        res.render("error")
+    })
     
 });
 
@@ -37,10 +37,10 @@ app.get("/coffee", function(req, res){
     .then(function(data){
         res.render("coffee", {data: data});
     })
-    .catch(function (err){
-        console.error(err);
-    });
-});
+    .catch(function (){
+        res.render("error");
+    })
+});    
 
 app.get("/bagels", function(req, res){
     yelp.search({ term: "best bagels", location: req.query.address, sort: 0 && 2, 
@@ -48,8 +48,8 @@ app.get("/bagels", function(req, res){
     .then(function(data){
         res.render("bagels", {data: data});
     })
-    .catch(function (err){
-        console.error(err);
+    .catch(function (){
+        res.render("error");
     });
 });
 
