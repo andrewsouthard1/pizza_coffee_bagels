@@ -27,17 +27,15 @@ img {
 
 .result-text {
 	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 700;
 	text-align: center;
+	text-shadow: 1px 1px 3px #b87333;
 }
 
 .result-img {
-	border: 5px dotted #b87333;
-	text-align: center;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	border: 1px solid #b87333;
+	border-radius: 25%;
 }
 
 .pictures {

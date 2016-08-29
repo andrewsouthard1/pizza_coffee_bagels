@@ -8,7 +8,7 @@
         <% data["businesses"].forEach(function(location){ %>
             <div class="col-md-4 col-sm-4 inlinePics">
             <%= location["name"] %><br>
-            <img class="result-img img-circle" src=<%= location["image_url"] %>><br>
+            <img class="img-circle result-img" src=<%= location["image_url"] %>><br>
             <%= location["location"]["cross_streets"] %><br>
             </div>
         <% }); %>
