@@ -1,15 +1,19 @@
 <% include partials/header %>
 
-<h1>Top 3 Results Near You!</h1>
+<h1>Top 3 Results Near You</h1>
 
-<% var sum = 0; %>
-<% data["businesses"].forEach(function(location){ %>
-    <div>
-        <%= location["name"] %><br>
-        <img src=<%= location["rating_img_url_small"] %>><br>
-        <img src=<%= location["image_url"] %>><br>
+<div class="container result-text">
+    <div class="row">
+        <% var sum = 0; %>
+        <% data["businesses"].forEach(function(location){ %>
+            <div class="col-md-4 col-sm-4 inlinePics">
+            <%= location["name"] %><br>
+            <img class="result-img img-circle" src=<%= location["image_url"] %>><br>
+            <%= location["location"]["cross_streets"] %><br>
+            </div>
+        <% }); %>
     </div>
-    <% }); %>
+</div>    
     
 <a href="/">Search again</a>
 

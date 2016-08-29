@@ -25,6 +25,21 @@ img {
 	margin: 5px 5px 5px 5px;
 }
 
+.result-text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.result-img {
+	border: 5px dotted #b87333;
+	text-align: center;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
 .pictures {
 	text-align: center;
 	margin-top: 75px;
