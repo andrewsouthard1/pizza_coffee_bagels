@@ -33,12 +33,9 @@ input[type="text"]{
 button[type="submit"]{
 	background: black;
 	color: #f7b731;
-	text-align: center;
 	border-radius: 50%;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
-
-
 }
 
 .form-style {
