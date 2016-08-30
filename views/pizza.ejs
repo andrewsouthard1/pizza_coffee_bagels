@@ -6,9 +6,9 @@
     <div class="row">
         <% var sum = 0; %>
         <% data["businesses"].forEach(function(location){ %>
-            <div class="col-md-4 col-sm-4 inlinePics">
+            <div class="inlinePics result">
             <%= location["name"] %><br>
-            <img class="img-circle result-img" src=<%= location["image_url"] %>><br>
+            <img src=<%= location["image_url"] %>><br>
             <%= location["location"]["cross_streets"] %><br>
             </div>
         <% }); %>

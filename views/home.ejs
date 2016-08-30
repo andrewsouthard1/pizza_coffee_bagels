@@ -1,5 +1,6 @@
 <% include partials/header %>
 
+
 <h1>Pizza Coffee Bagels</h1>
 
 <div class="container pictures">
@@ -14,33 +15,40 @@
 		<img src="images/bagel_v5.png">
 	</div>
 	</div>
-	
 
 	<div class="row">
-	<form action="/pizza" id = "pizzaForm" method="GET">
-		<p>Enter your address to find the top three spots!<p>
-		<input type="text" id="address" name="address"><br>
-		<input type="submit" name="Pizza Time" value="	Pizza Time">
+	<form action="/pizza" id = "pizzaForm" method="GET" class="form-style inlinePics">
+		<p class="form-text">Enter your address to find the top three spots!<p>
+		<input type="text" id="address" name="address">
+		<button type="submit">
+			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		</button>	
 	</form>
 	</div>
 
 
-	<div class="row form-group">
-	<form action="/coffee" id = "coffeeForm" method="GET">
-		<p>Enter your address to find the top three spots!<p>
-		<input type="text" id="address" name="address"><br>
-		<input type="submit" name="Coffee Time" value="Coffee Time">
+	<div class="row">
+	<form action="/coffee" id ="coffeeForm" class="form-style inlinePics" method="GET">
+		<p class="form-text">Enter your address to find the top three spots!<p>
+		<input type="text" id="address" name="address">
+		<button type="submit">
+			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		</button>	
 	</form>
 	</div>
 
-	<div class="row form-group">
-	<form action="/bagels" id = "bagelForm" method="GET">
-		<p>Enter your address to find the top three spots!<p>
-		<input type="text" id="address" name="address"><br>
-		<input type="submit" name="Bagel Time" value="Bagel Time">
+	<div class="row">
+	<form action="/bagels" id ="bagelForm" class="form-style inlinePics" method="GET">
+		<p class="form-text">Enter your address to find the top three spots!<p>
+		<input type="text" id="address" name="address">
+		<button type="submit">
+			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		</button>	
 	</form>
 	</div>
+	<br>
+	<a href="" id="backLink">Go Back</a>
+
 
 <script type="text/javascript" src="public/selector.js"></script>
-
 <% include partials/footer %>

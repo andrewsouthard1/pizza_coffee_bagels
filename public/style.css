@@ -50,6 +50,7 @@ button[type="submit"]{
 	font-weight: 800;
 	margin-top: 25px;
 	border-radius: 5%;
+	display: none;
 }
 
 .form-text {
@@ -58,15 +59,24 @@ button[type="submit"]{
 
 .result-text {
 	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	font-weight: 700;
+	font-size: 15px;
+	font-weight: 800;
 	text-align: center;
-	text-shadow: 1px 1px 3px #b87333;
 }
 
-.result-img {
-	border: 1px solid #b87333;
-	border-radius: 25%;
+.result{
+	border: 5px dotted black;
+	border-radius: 5%;
+	background: #f7b731;
+	padding: 10px;
+	width: 300px;
+	text-align: center;
+}
+
+.result > img {
+	height: 150px;
+	width: 150px;
+	border-radius: 5%;
 }
 
 .pictures {
@@ -74,7 +84,7 @@ button[type="submit"]{
 	margin-top: 40px;
 }
 
-.inlinePics {
-	display: inline-block;
-}
+/*.inlinePics {*/
+/*	display: inline-block;*/
+/*}*/
 
