@@ -28,6 +28,8 @@ img {
 input[type="text"]{
 	width: 200px;
 	border-radius: 10%;
+	font-family: "Arial", sans-serif;
+	font-weight: 400;
 }
 
 button[type="submit"]{
