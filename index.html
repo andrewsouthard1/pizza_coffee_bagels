@@ -3,8 +3,8 @@
 <head>
 <title>Pizza Coffee Bagels</title>
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Open+Sans" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="public/style.css" rel="stylesheet" type="text/css" >
 </head>
@@ -25,18 +25,19 @@
 		<img src="public/images/bagel_v5.png">
 	</div>
 	</div>
-	
 
 	<div class="row">
-	<form action="/pizza" id = "pizzaForm" method="GET">
-		<p>Enter your address to find the top three spots!<p>
-		<input type="text" id="address" name="address"><br>
-		<input type="submit" name="Pizza Time" value="	Pizza Time">
+	<form action="/pizza" id = "pizzaForm" method="GET" class="form-style inlinePics">
+		<p class="form-text">Enter your address to find the top three spots!<p>
+		<input type="text" id="address" name="address">
+		<button type="submit" name="Pizza Time">
+			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		</button>	
 	</form>
 	</div>
 
 
-	<div class="row form-group">
+	<div class="row">
 	<form action="/coffee" id = "coffeeForm" method="GET">
 		<p>Enter your address to find the top three spots!<p>
 		<input type="text" id="address" name="address"><br>
@@ -44,7 +45,7 @@
 	</form>
 	</div>
 
-	<div class="row form-group">
+	<div class="row">
 	<form action="/bagels" id = "bagelForm" method="GET">
 		<p>Enter your address to find the top three spots!<p>
 		<input type="text" id="address" name="address"><br>
