@@ -31,7 +31,7 @@ $("#bagelPic").on("click", function(){
 	$("#pizzaForm").remove();
 	$("#coffeeForm").remove();
 	$(this).removeClass('col-md-4 col-sm-4');
-	$("#coffeeForm").fadeIn(1000);
+	$("#bagelForm").fadeIn(1000);
 	$("#backLink").fadeIn(1000);
 
 });

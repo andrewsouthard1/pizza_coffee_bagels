@@ -16,6 +16,7 @@ h1 {
 	text-shadow: 1px 1px 2px #b87333;
 }
 
+
 img {
 	max-width: auto;
 	max-height: auto;
@@ -23,6 +24,18 @@ img {
 	width: 250px;
 	padding: 5px 5px 5px 5px;
 	margin: 5px 5px 5px 5px;
+}
+
+a {
+	font-family: 'Bungee Shade', cursive;
+	color: #ff69b4;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darkcyan;
+	text-decoration: none;
 }
 
 input[type="text"]{
@@ -39,6 +52,12 @@ button[type="submit"]{
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 }
+
+/*#search {*/
+/*	margin-top: 20px;*/
+/*	margin-right: 5%;*/
+/*	float: right;*/
+/*}*/
 
 .form-style {
 	border: 5px dotted black;
@@ -68,15 +87,16 @@ button[type="submit"]{
 	border: 5px dotted black;
 	border-radius: 5%;
 	background: #f7b731;
-	padding: 10px;
+	margin: 10px 10px 10px 10px;
 	width: 300px;
 	text-align: center;
 }
 
-.result > img {
-	height: 150px;
-	width: 150px;
-	border-radius: 5%;
+a img {
+	height: 250px;
+	width: 250px;
+	border: 15px solid black;
+	border-radius: 50%;
 }
 
 .pictures {
@@ -84,7 +104,7 @@ button[type="submit"]{
 	margin-top: 40px;
 }
 
-/*.inlinePics {*/
-/*	display: inline-block;*/
-/*}*/
+.inlinePics {
+	display: inline-block;
+}
 

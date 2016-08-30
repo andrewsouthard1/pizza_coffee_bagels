@@ -1,6 +1,5 @@
 <% include partials/header %>
 
-
 <h1>Pizza Coffee Bagels</h1>
 
 <div class="container pictures">
@@ -17,7 +16,7 @@
 	</div>
 
 	<div class="row">
-	<form action="/pizza" id = "pizzaForm" method="GET" class="form-style inlinePics">
+	<form action="/pizza" id = "pizzaForm" class="form-style inlinePics" method="GET">
 		<p class="form-text">Enter your address to find the top three spots!<p>
 		<input type="text" id="address" name="address">
 		<button type="submit">
@@ -48,7 +47,6 @@
 	</div>
 	<br>
 	<a href="" id="backLink">Go Back</a>
-
 
 <script type="text/javascript" src="public/selector.js"></script>
 <% include partials/footer %>
