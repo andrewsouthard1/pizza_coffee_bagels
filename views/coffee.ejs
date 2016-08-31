@@ -1,16 +1,23 @@
 <% include partials/header %>
 
-<h1>Top 3 Results Near You!</h1>
+<h1>Top 3 Results Near You</h1>
 
-<% var sum = 0; %>
-<% data["businesses"].forEach(function(location){ %>
-    <div>
-        <%= location["name"] %><br>
-        <img src=<%= location["rating_img_url_small"] %>><br>
-        <img src=<%= location["image_url"] %>><br>
+<div class="container result-text">
+    <div class="row">
+        <% var sum = 0; %>
+        <% data["businesses"].forEach(function(location){ %>
+            <div class="inlinePics result">
+            <%= location["name"] %><br>
+            <a href= <%=location["url"]%>><img src=<%=location["image_url"]%>></a><br>
+            <%= location["location"]["cross_streets"] %><br>
+            </div>
+        <% }); %>
     </div>
-    <% }); %>
     
-<a href="/">Search again</a>
-
+    <div class="row">
+        <div class="col-md-12">
+            <a href="/" id="search">PizzaCoffeeBagels.com</a>
+        </div>
+    </div>
+</div    
 <% include partials/footer %>
