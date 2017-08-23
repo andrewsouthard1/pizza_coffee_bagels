@@ -4,15 +4,24 @@
   "description": "web app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Andrew Southard",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "ejs": "^2.4.2",
-    "express": "^4.14.0",
-    "request": "^2.74.0",
-    "yelp": "^1.0.1"
-  }
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "request": "^2.81.0",
+    "yelp": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewsouthard1/pizza_coffee_bagels.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewsouthard1/pizza_coffee_bagels/issues"
+  },
+  "homepage": "https://github.com/andrewsouthard1/pizza_coffee_bagels#readme"
 }

@@ -3,12 +3,14 @@ var bodyParser = require("body-parser");
 var request = require("request");
 var Yelp = require('yelp');
 var yelp = new Yelp({
-    consumer_key: 'AYQX6e_PstilFANCab4PfQ', 
-    consumer_secret: 'irZJOGSfXlbHuokp6nBmtoWYcPA',
-    token: '8MMtdRlDPoyI1zaYy8eKWEMW4fKBq_37',
-    token_secret: 'IwsSiCcPchWwx1PHyK4qxc2EPaA'
+    consumer_key: process.env.CK, 
+    consumer_secret: process.env.CS,
+    token: process.env.TKN,
+    token_secret: process.env.TKN_SCT
 });
+var port = process.env.PORT || 8080;
 var app = express();
+require('dotenv').config();
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
@@ -52,6 +54,6 @@ app.get("/bagels", function(req, res){
     });
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(port, process.env.IP, function(){
     console.log("PCB app has started!");
 });
