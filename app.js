@@ -28,7 +28,6 @@ app.get("/pizza", function(req, res){
     .catch(function (){
         res.render("error")
     })
-    
 });
 
 app.get("/coffee", function(req, res){

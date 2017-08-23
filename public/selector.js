@@ -12,7 +12,6 @@ $("#pizzaPic").on("click", function(){
 	$(this).removeClass('col-md-4 col-sm-4');
 	$("#pizzaForm").fadeIn(1000);
 	$("#backLink").fadeIn(1000);
-	
 });
 
 $("#coffeePic").on("click", function(){
